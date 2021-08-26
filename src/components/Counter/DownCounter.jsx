@@ -1,17 +1,8 @@
-import { useState, useEffect } from 'react';
 import Card from '../UI/Card';
+import useCounter from '../../hooks/use-counter';
 
 const DownCounter = () => {
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    const int1 = setInterval(() => {
-      setCounter((prevState) => prevState - 1);
-    }, 1000);
-    return () => {
-      clearInterval(int1);
-    };
-  }, []);
+  const counter = useCounter('down');
 
   return (
     <Card>
