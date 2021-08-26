@@ -1,0 +1,8 @@
+.card {
+  max-width: 30%;
+  margin: 3rem auto;
+  background-color: snow;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
