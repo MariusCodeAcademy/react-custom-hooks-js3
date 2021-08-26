@@ -20,7 +20,11 @@ function App() {
       }
 
       const data = await response.json();
-
+      console.log(data);
+      //  { TODO:
+      //   -Mi0BoTgCM_33bWVSbES: {text: "Buy milk"}
+      //   -Mi0C2MbYB9Sf29iXQ5m: {text: "Do sports"}
+      //     }
       const loadedTasks = [];
 
       for (const taskKey in data) {
